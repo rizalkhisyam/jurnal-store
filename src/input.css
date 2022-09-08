@@ -30,3 +30,9 @@ body {
   border: solid 1px #d0d6dd;
   border-radius: 6px;
 }
+
+.form input {
+  border: solid 1px #d0d6dd;
+  border-radius: 6px;
+  height: 36px;
+}
