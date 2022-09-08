@@ -1,188 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="dist/output.css">
-</head>
-<body>
+    <link rel="stylesheet" href="dist/output.css" />
+  </head>
+  <body>
     <!-- hero section -->
     <section id="hero" class="pt-5 mb-5">
-        <div class="container">
-            <div class="flex flex-wrap mx-auto">
-                <div class="grid grid-cols-12">
-                    <div class="w-full self-center px-3 col-span-10">
-                        <h1 class="text-2xl font-bold text-primary">Hungry Birds Coffee</h1>
-                        <h2 class="text-sm font-semibold text-primary pt-3">Flavors to fall for</h2>
-                        <p class="text-sm text-primary">Our all-new lineup of fall flavors is here! Hurry in today and treat yoursef... because you deserve it!</p>
-                        <p class="text-sm text-primary pt-4 font-semibold">WhatsApp us <a href="#" class="font-normal underline text-link">+6287899999999</a></p>
-                    </div>
-                    <div class="col-span-2">
-                        <button type="button" class="bg-white hover:bg-red-500 hover:text-white focus:ring-1 focus:outline-none shadow-md focus:ring-red-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center">
-                            <img src="assets/images/cart.png" alt="">
-                            <span class="sr-only">Icon description</span>
-                          </button>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="flex flex-wrap mx-auto">
+          <div class="grid grid-cols-12">
+            <div class="w-full self-center px-3 col-span-10">
+              <h1 class="text-2xl font-bold text-primary">
+                Hungry Birds Coffee
+              </h1>
+              <h2 class="text-sm font-semibold text-primary pt-3">
+                Flavors to fall for
+              </h2>
+              <p class="text-sm text-primary">
+                Our all-new lineup of fall flavors is here! Hurry in today and
+                treat yoursef... because you deserve it!
+              </p>
+              <p class="text-sm text-primary pt-4 font-semibold">
+                WhatsApp us
+                <a href="#" class="font-normal underline text-link"
+                  >+6287899999999</a
+                >
+              </p>
             </div>
+            <div class="col-span-2">
+              <button
+                type="button"
+                onclick="window.location.href='cart.html'"
+                class="bg-white hover:bg-red-500 hover:text-white focus:ring-1 focus:outline-none shadow-md focus:ring-red-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center"
+              >
+                <img src="assets/images/cart.png" alt="" />
+                <span class="sr-only">Icon description</span>
+              </button>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <!-- end section -->
 
     <!-- content section -->
     <section class="product-primary">
-            <div class="w-full h-400 bg-white px-3 border-t-1 border-b-2">
-                <div class="flex w-full justify-between pt-3">
-                    <h2 class="text-primary text-xl font-semibold">Coffee</h2>
-                    <span><a href="#" class="text-sm hover:underline text-link">View All</a></span>
+      <div class="w-full h-400 bg-white px-3 border-t-1 border-b-2">
+        <div class="flex w-full justify-between pt-3">
+          <h2 class="text-primary text-xl font-semibold">Coffee</h2>
+          <span
+            ><a href="#" class="text-sm underline text-link">View All</a></span
+          >
+        </div>
+        <!-- card -->
+        <div class="grid grid-cols-12 gap-4 pt-3">
+          <div class="col-span-6">
+            <div class="card hover:shadow-lg h-300">
+              <figure class="shadow-sm px-2">
+                <div class="flex w-full items-center justify-center h-152">
+                  <img
+                    src="assets/images/image_1.png"
+                    alt="product_1"
+                    class="justify-center"
+                  />
                 </div>
-                <!-- card -->
-                <div class="grid grid-cols-12 gap-4 pt-3">
-                    <div class="col-span-6">
-                        <div class="card hover:shadow-lg h-300">
-                            <figure class="shadow-sm px-2">
-                                <div class="flex w-full items-center justify-center h-152">
-                                    <img src="assets/images/image_1.png" alt="product_1" class="justify-center">
-                                </div>
-                                <blockquote class="pt-2"> 
-                                    <figcaption class="font-normal">
-                                        <div class="caption mb-10" >
-                                            <div class="text-sm">
-                                                House Blend Light
-                                            </div>
-                                            <div class="text-sm">
-                                                Roast Coffee
-                                            </div>
-                                            <div class="text-xs text-grey">
-                                                12 oz Bag Ground
-                                            </div>
-                                        </div>
-                                        <div class="price text-sm font-semibold pb-2">
-                                            Rp. 45.000
-                                        </div>
-                                    </figcaption>
-                                </blockquote>
-                            </figure>
-                        </div>
+                <blockquote class="pt-2">
+                  <figcaption class="font-normal">
+                    <div class="caption mb-10">
+                      <div class="text-sm">House Blend Light</div>
+                      <div class="text-sm">Roast Coffee</div>
+                      <div class="text-xs text-grey">12 oz Bag Ground</div>
                     </div>
-                    <div class="col-span-6">
-                        <div class="card hover:shadow-lg h-300">
-                            <figure class="shadow-sm px-2">
-                                <div class="flex w-full items-center justify-center h-152">
-                                    <img src="assets/images/image_2.png" alt="product_1">
-                                </div>
-                                <blockquote class="pt-2"> 
-                                    <figcaption class="font-normal">
-                                        <div class="caption mb-10">
-                                            <div class="text-sm">
-                                                Expresso Roast Blend
-                                            </div>
-                                            <div class="text-sm">
-                                                Beans & Ground Coffee
-                                            </div>
-                                            <div class="text-xs text-grey">
-                                                12 oz Bag Ground
-                                            </div>
-                                        </div>
-                                        <div class="price text-sm font-semibold pb-2">
-                                            Rp. 45.000
-                                        </div>
-                                    </figcaption>
-                                </blockquote>
-                            </figure>
-                        </div>
+                    <div class="price text-sm font-semibold pb-2">
+                      Rp. 45.000
                     </div>
-                </div>
-                <!-- end card -->
+                  </figcaption>
+                </blockquote>
+              </figure>
             </div>
+          </div>
+          <div class="col-span-6">
+            <div class="card hover:shadow-lg h-300">
+              <figure class="shadow-sm px-2">
+                <div class="flex w-full items-center justify-center h-152">
+                  <img src="assets/images/image_2.png" alt="product_1" />
+                </div>
+                <blockquote class="pt-2">
+                  <figcaption class="font-normal">
+                    <div class="caption mb-10">
+                      <div class="text-sm">Expresso Roast Blend</div>
+                      <div class="text-sm">Beans & Ground Coffee</div>
+                      <div class="text-xs text-grey">12 oz Bag Ground</div>
+                    </div>
+                    <div class="price text-sm font-semibold pb-2">
+                      Rp. 45.000
+                    </div>
+                  </figcaption>
+                </blockquote>
+              </figure>
+            </div>
+          </div>
+        </div>
+        <!-- end card -->
+      </div>
     </section>
     <section class="product-secondary">
-        <div class="w-full h-400 bg-white px-3 border-t-1 border-b-2">
-            <div class="flex w-full justify-between pt-3">
-                <h2 class="text-primary text-xl font-semibold">Powders</h2>
-                <span><a href="#" class="text-sm hover:underline text-link">View All</a></span>
-            </div>
-            <!-- card -->
-            <div class="grid grid-cols-12 gap-4 pt-3">
-                <div class="col-span-6">
-                    <div class="card hover:shadow-lg h-300">
-                        <figure class="shadow-sm px-2">
-                            <div class="flex w-full items-center justify-center h-152">
-                                <img src="assets/images/powder.png" alt="product_1" class="justify-center items-center">
-                            </div>
-                            <blockquote class="pt-2"> 
-                                <figcaption class="font-normal">
-                                    <div class="caption mb-10" >
-                                        <div class="text-sm">
-                                            Special Dutch
-                                        </div>
-                                        <div class="text-sm">
-                                            Chocolate Powder
-                                        </div>
-                                        <div class="text-xs text-grey">
-                                            12 oz Bag Ground
-                                        </div>
-                                    </div>
-                                    <div class="price text-sm font-semibold pb-2">
-                                        Rp. 45.000
-                                    </div>
-                                </figcaption>
-                            </blockquote>
-                        </figure>
-                    </div>
-                </div>
-                <div class="col-span-6">
-                    <div class="card hover:shadow-lg h-300">
-                        <figure class="shadow-sm px-2">
-                            <div class="flex w-full items-center justify-center h-152">
-                                <img src="assets/images/powder.png" alt="product_1">
-                            </div>
-                            <blockquote class="pt-2"> 
-                                <figcaption class="font-normal">
-                                    <div class="caption mb-10">
-                                        <div class="text-sm">
-                                            Hazzelnut Powder
-                                        </div>
-                                        <div class="text-sm">
-                                            
-                                        </div>
-                                        <div class="text-xs text-grey">
-                                            12 oz Bag Ground
-                                        </div>
-                                    </div>
-                                    <div class="price text-sm font-semibold pb-2">
-                                        Rp. 45.000
-                                    </div>
-                                </figcaption>
-                            </blockquote>
-                        </figure>
-                    </div>
-                </div>
-            </div>
-            <!-- end card -->
+      <div class="w-full h-400 bg-white px-3 border-t-1 border-b-2">
+        <div class="flex w-full justify-between pt-3">
+          <h2 class="text-primary text-xl font-semibold">Powders</h2>
+          <span
+            ><a href="#" class="text-sm underline text-link">View All</a></span
+          >
         </div>
+        <!-- card -->
+        <div class="grid grid-cols-12 gap-4 pt-3">
+          <div class="col-span-6">
+            <div class="card hover:shadow-lg h-300">
+              <figure class="shadow-sm px-2">
+                <div class="flex w-full items-center justify-center h-152">
+                  <img
+                    src="assets/images/powder.png"
+                    alt="product_1"
+                    class="justify-center items-center"
+                  />
+                </div>
+                <blockquote class="pt-2">
+                  <figcaption class="font-normal">
+                    <div class="caption mb-10">
+                      <div class="text-sm">Special Dutch</div>
+                      <div class="text-sm">Chocolate Powder</div>
+                      <div class="text-xs text-grey">12 oz Bag Ground</div>
+                    </div>
+                    <div class="price text-sm font-semibold pb-2">
+                      Rp. 45.000
+                    </div>
+                  </figcaption>
+                </blockquote>
+              </figure>
+            </div>
+          </div>
+          <div class="col-span-6">
+            <div class="card hover:shadow-lg h-300">
+              <figure class="shadow-sm px-2">
+                <div class="flex w-full items-center justify-center h-152">
+                  <img src="assets/images/powder.png" alt="product_1" />
+                </div>
+                <blockquote class="pt-2">
+                  <figcaption class="font-normal">
+                    <div class="caption mb-10">
+                      <div class="text-sm">Hazzelnut Powder</div>
+                      <div class="text-sm"></div>
+                      <div class="text-xs text-grey">12 oz Bag Ground</div>
+                    </div>
+                    <div class="price text-sm font-semibold pb-2">
+                      Rp. 45.000
+                    </div>
+                  </figcaption>
+                </blockquote>
+              </figure>
+            </div>
+          </div>
+        </div>
+        <!-- end card -->
+      </div>
     </section>
     <!-- end content -->
 
     <!-- footer -->
     <footer
-      class="bg-secondary
-             text-base
-             relative
-             inset-x-0
-             bottom-0
-             p-4
-             text-center">
-             <div class="flex justify-center">
-                <div class="p-2 text-grey">
-                    <span>Powered By</span>
-                </div>
-                <div class="p-2">
-                    <img src="assets/logo/logo.svg" alt="">
-                </div>
-              </div>
+      class="bg-secondary text-base relative inset-x-0 bottom-0 p-4 text-center"
+    >
+      <div class="flex justify-center">
+        <div class="p-2 text-grey">
+          <span>Powered By</span>
+        </div>
+        <div class="p-2">
+          <img src="assets/logo/logo.svg" alt="" />
+        </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
