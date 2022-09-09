@@ -3,170 +3,200 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="width=375" name="viewport">
     <title>Document</title>
     <link rel="stylesheet" href="dist/output.css" />
   </head>
   <body>
-    <section class="pt-5 mb-5">
-      <div class="w-full flex flex-wrap"></div>
-      <div class="flex items-center px-3">
-        <button
-          type="button"
-          onclick="window.location.href='index.html'"
-          class="bg-white hover:bg-red-500 hover:text-white focus:ring-1 focus:outline-none shadow-md focus:ring-red-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center"
-        >
-          <img src="assets/images/arrow.png" alt="" />
-          <span class="sr-only">Icon description</span>
-        </button>
-        <div class="mx-3">
-          <h1 class="text-2xl font-bold text-primary">Order details</h1>
+    <div class="screen">
+      <section class="pt-5 mb-5">
+        <div class="w-full flex flex-wrap"></div>
+        <div class="flex items-center px-3">
+          <button
+            type="button"
+            onclick="window.location.href='index.html'"
+            class="bg-white hover:bg-red-500 hover:text-white focus:ring-1 focus:outline-none shadow-md focus:ring-red-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center"
+          >
+            <img src="assets/images/arrow.png" alt="" />
+          </button>
+          <div class="mx-3">
+            <h1 class="text-2xl font-bold text-primary">Order details</h1>
+          </div>
         </div>
-      </div>
-    </section>
-    <section class="cart-detail mb-1">
-      <div class="w-full bg-white border-t-1 pt-2">
-        <div class="grid gap-2 px-3">
-          <div class="grid grid-cols-12 border-b-2">
-            <div class="flex col-span-7">
-              <img src="assets/images/image_1.png" class="image-cart" />
-              <div class="grid px-2">
-                <span class="text-sm">House Blend Light Roast Coffee</span>
-                <span class="text-xs text-grey">12 oz Bag Ground</span>
-                <div class="flex items-center pt-1 mb-1">
-                  <div class="minus"><button class="">-</button></div>
-                  <div
-                    class="input-quantity mx-3 my-3 flex items-center justify-center"
-                  >
-                    <span class="text-sm text-primary">1</span>
+      </section>
+      <section class="cart-detail mb-1">
+        <div class="w-full bg-white border-t-1 pt-2">
+          <div class="grid gap-2 px-3">
+            <div class="grid grid-cols-12">
+              <div class="flex col-span-7">
+                <img src="assets/images/image_1.png" class="image-cart" />
+                <div class="grid px-2">
+                  <span class="text-sm">House Blend Light Roast Coffee</span>
+                  <span class="text-xs text-grey">12 oz Bag Ground</span>
+                  <div class="flex items-center pt-1 mb-1">
+                    <div class="minus"><button class="">-</button></div>
+                    <div
+                      class="input-quantity mx-3 my-3 flex items-center justify-center"
+                    >
+                      <span class="text-sm text-primary">1</span>
+                    </div>
+                    <div class="plus"><button>+</button></div>
                   </div>
-                  <div class="plus"><button>+</button></div>
+                  <span class="text-red-600 text-sm underline mb-2">Remove</span>
                 </div>
-                <span class="text-red-600 text-sm underline mb-2">Remove</span>
+              </div>
+              <div class="col-span-5">
+                <div class="grid">
+                  <span class="text-xs text-grey flex justify-end"
+                    >1 x Rp. 45.000</span
+                  >
+                  <span class="text-sm flex justify-end">Rp. 45.000</span>
+                </div>
               </div>
             </div>
-            <div class="col-span-5">
-              <div class="grid px-2">
-                <span class="text-xs text-grey flex justify-end"
-                  >1 x Rp. 45.000</span
-                >
-                <span class="text-sm flex justify-end">Rp. 45.000</span>
-              </div>
+            <div class="w-full">
+              <hr>
             </div>
           </div>
-        </div>
-        <div class="flex justify-between px-3 pt-3">
-          <span class="text-sm font-semibold">Items total</span>
-          <span class="text-sm font-semibold mb-4">Rp. 45.000</span>
-        </div>
-      </div>
-    </section>
-    <section class="contact">
-      <div class="w-full bg-white">
-        <div class="pt-3 px-3">
-          <h1 class="text-primary text-xl font-semibold">
-            Contact informations
-          </h1>
-        </div>
-        <form action="" class="form px-3 pt-3">
-          <div class="mb-3 xl:w-96">
-            <label
-              for="name"
-              class="text-sm form-label inline-block mb-2 font-semibold"
-              >Name</label
-            >
-            <input
-              type="text"
-              class="form-control block w-full text-base font-normal text-gray-700 bg-white borderborder-gray-400 rounded-sm"
-              id="name"
-              placeholder=""
-            />
+          <div class="flex justify-between px-3 pt-3">
+            <span class="text-sm font-semibold">Items total</span>
+            <span class="text-sm font-semibold mb-4">Rp. 45.000</span>
           </div>
-          <div class="mb-3 xl:w-96">
-            <label
-              for="email"
-              class="text-sm form-label inline-block mb-2 font-semibold"
-              >Email address</label
-            >
-            <input
-              type="email"
-              class="form-control block w-full text-base font-normal text-gray-700 bg-white borderborder-gray-400 rounded-sm"
-              id="email"
-              placeholder=""
-            />
-          </div>
-          <div class="mb-3 xl:w-96">
-            <label
-              for="phone"
-              class="text-sm form-label inline-block mb-2 font-semibold"
-              >WhatsApp</label
-            >
-            <input
-              type="number"
-              class="form-control block w-full text-base font-normal text-gray-700 bg-white borderborder-gray-400 rounded-sm"
-              id="phone"
-              placeholder=""
-            />
-          </div>
-        </form>
-      </div>
-    </section>
-    <section class="delivery">
-      <div class="w-full bg-white">
-        <div class="pt-3 px-3">
-          <h1 class="text-primary text-xl font-semibold">
-            Delivery information
-          </h1>
         </div>
-        <form action="" class="form px-3 pt-3">
-          <div class="mb-3 xl:w-96">
-            <label
-              for="address"
-              class="text-sm form-label inline-block mb-2 font-semibold"
-              >Address</label
-            >
-            <input
-              type="text"
-              class="form-control mb-1 block w-full text-base font-normal text-gray-700 bg-white borderborder-gray-400 rounded-sm"
-              id="address"
-              placeholder=""
-            />
-            <input
-              type="text"
-              class="form-control block w-full text-base font-normal text-gray-700 bg-white borderborder-gray-400 rounded-sm"
-              id="address"
-              placeholder=""
-            />
+      </section>
+      <section class="contact">
+        <div class="w-full bg-white pb-1">
+          <div class="pt-3 px-3">
+            <h1 class="text-primary text-xl font-semibold">
+              Contact informations
+            </h1>
           </div>
-
-          <div class="mb-3 xl:w-96">
-            <label
-              for="post"
-              class="text-sm form-label inline-block mb-2 font-semibold"
-              >Postal code</label
-            >
-            <input
-              type="number"
-              class="form-control block w-full text-base font-normal text-gray-700 bg-white borderborder-gray-400 rounded-sm"
-              id="post"
-              placeholder=""
-            />
+          <form action="" class="form px-3 pt-3">
+            <div class="mb-3">
+              <label
+                for="name"
+                class="text-sm form-label inline-block mb-2 font-semibold"
+                >Name</label
+              >
+              <input
+                type="text"
+                class="form-control block w-full text-base font-normal text-gray-700 bg-white px-3"
+                id="name"
+                placeholder=""
+              />
+            </div>
+            <div class="mb-3">
+              <label
+                for="email"
+                class="text-sm form-label inline-block mb-2 font-semibold"
+                >Email address</label
+              >
+              <input
+                type="email"
+                class="form-control block w-full text-base font-normal text-gray-700 bg-white px-3"
+                id="email"
+                placeholder=""
+              />
+            </div>
+            <div class="mb-3">
+              <label
+                for="phone"
+                class="text-sm form-label inline-block mb-2 font-semibold"
+                >WhatsApp</label
+              >
+              <input
+                type="number"
+                class="form-control block w-full text-base font-normal text-gray-700 bg-white px-3"
+                id="phone"
+                placeholder=""
+              />
+            </div>
+          </form>
+        </div>
+      </section>
+      <section class="delivery pt-1 ">
+        <div class="w-full bg-white pb-1">
+          <div class="pt-3 px-3">
+            <h1 class="text-primary text-xl font-semibold">
+              Delivery information
+            </h1>
           </div>
-        </form>
-      </div>
-    </section>
-    <footer
-      class="bg-secondary text-base relative inset-x-0 bottom-0 p-4 text-center"
-    >
-      <div class="flex justify-center">
-        <div class="p-2 text-grey">
-          <span>Powered By</span>
+          <form action="" class="form px-3 pt-3">
+            <div class="mb-3">
+              <label
+                for="address"
+                class="text-sm form-label inline-block mb-2 font-semibold"
+                >Address</label
+              >
+              <input
+                type="text"
+                class="form-control mb-1 block w-full text-base font-normal text-gray-700 bg-white px-3"
+                id="address1"
+                placeholder=""
+              />
+              <input
+                type="text"
+                class="form-control block w-full text-base font-normal text-gray-700 bg-white px-3"
+                id="address2"
+                placeholder=""
+              />
+            </div>
+      
+            <div class="mb-3">
+              <label
+                for="post"
+                class="text-sm form-label inline-block mb-2 font-semibold"
+                >Postal code</label
+              >
+              <input
+                type="number"
+                class="form-control block w-full text-base font-normal text-gray-700 bg-white px-3"
+                id="post"
+                placeholder=""
+              />
+            </div>
+          </form>
         </div>
-        <div class="p-2">
-          <img src="assets/logo/logo.svg" alt="" />
+      </section>
+      <section class="order-summary pt-1">
+        <div class="w-full bg-white px-3 pb-5">
+          <div class="flex justify-between pt-3 items-center">
+            <h1 class="text-xl text-primary font-semibold">Order summary</h1>
+            <a href="#" class="underline text-link text-sm">Clear</a>
+          </div>
+          <div class="flex justify-between pt-3">
+            <span class="text-sm font-normal">Items total</span>
+            <span class="text-sm font-normal mb-4">Rp. 45.000</span>
+          </div>
+          <div class="flex justify-between">
+            <span class="text-sm font-normal">Delivery</span>
+            <span class="text-sm font-normal mb-4">Rp. 5.000</span>
+          </div>
+          <div class="w-full">
+            <hr>
+          </div>
+          <div class="flex justify-between pt-3">
+            <span class="text-sm font-semibold">Total</span>
+            <span class="text-sm font-semibold mb-4">Rp. 50.000</span>
+          </div>
+          <button onclick="window.location.href='success.html'" class="w-full h-10 px-3 text-white transition-colors duration-150 bg-button rounded-lg hover:bg-red-500">Order</button>
         </div>
-      </div>
-    </footer>
+        
+      </section>
+      <footer
+        class="bg-secondary text-base relative inset-x-0 bottom-0 p-4 text-center"
+      >
+        <div class="flex justify-center">
+          <div class="p-2 text-grey">
+            <span>Powered By</span>
+          </div>
+          <div class="p-2">
+            <img src="assets/logo/logo.svg" alt="" />
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
     <script>
       const plus = document.querySelector(".plus"),
         minus = document.querySelector(".minus"),
