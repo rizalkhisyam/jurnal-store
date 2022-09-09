@@ -3,11 +3,11 @@
 @tailwind utilities;
 @font-face {
   font-family: eagleFont;
-  src: url(../assets/fonts/EagleLake-Regular.ttf);
+  src: url(../assets/fonts/Inter-Regular.ttf);
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: eagleFont;
 }
 
 .button-cart {
