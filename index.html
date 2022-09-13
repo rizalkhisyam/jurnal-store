@@ -35,16 +35,29 @@
               </div>
               <div class="col-span-2">
                 <button
+                  onmouseover="hover(this);" 
+                  onmouseout="unhover(this);"
                   type="button"
                   onclick="window.location.href='cart.html'"
-                  class="bg-white hover:bg-red-500 hover:text-white focus:ring-1 focus:outline-none shadow-md focus:ring-red-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center"
+                  class="justify-center cart-item bg-white hover:bg-button hover:text-white focus:ring-1 focus:outline-none focus:ring-red-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center"
                 >
-                  <img src="assets/images/cart.png" alt="" />
-                  <span class="sr-only">Icon description</span>
+                  <img src="assets/images/Cart.svg" alt="cart" class="img-cart" id="img-cart-1"/>
+                  <img src="assets/images/Cart_hover.svg" alt="cart" class="img-cart hidden" id="img-cart-2"/>
                 </button>
+                <div class="notification hidden" id="notification">
+                  <div class="notification-badge text-sm mx-8">
+                    1
+                  </div>
+                </div>
               </div>
             </div>
           </div>
+        </div>
+        <div class="w-full flex justify-center hidden" id="alert">
+            <div class="alert-success">
+              <img src="assets/images/Done.svg" alt="">
+              <span class="text-sm text-primary ml-3.5">Item added</span>
+            </div>
         </div>
       </section>
       <!-- end section -->
@@ -64,87 +77,93 @@
           <div class="swiper slider">
             <div class="grid grid-cols-12 gap-12 pt-3 swiper-wrapper">
               <div class="col-span-6 swiper-slide">
-                <div class="card h-300">
-                  <figure class="px-2">
-                    <div class="flex w-full items-center justify-center h-152">
-                      <img src="assets/images/image_1.png" alt="product_1" />
-                    </div>
-                    <blockquote class="pt-2">
-                      <figcaption class="font-normal">
-                        <div class="w-full figure-caption">
-                          <div class="caption">
-                            <div class="text-sm">
-                              House Blend Light Roast Coffee
-                            </div>
-                            <div class="text-xs text-grey">
-                              12 oz Bag Ground
+                <a href="#" onclick="addToCart();">
+                  <div class="card h-300">
+                    <figure class="px-2">
+                      <div class="flex w-full items-center justify-center h-152">
+                        <img src="assets/images/image_1.png" alt="product_1" />
+                      </div>
+                      <blockquote class="pt-2">
+                        <figcaption class="font-normal">
+                          <div class="w-full figure-caption">
+                            <div class="caption">
+                              <div class="text-sm">
+                                House Blend Light Roast Coffee
+                              </div>
+                              <div class="text-xs text-grey">
+                                12 oz Bag Ground
+                              </div>
                             </div>
                           </div>
-                        </div>
-                        <div class="price pt-4 text-sm font-semibold pb-2">
-                          Rp. 45.000
-                        </div>
-                      </figcaption>
-                    </blockquote>
-                  </figure>
-                </div>
+                          <div class="price pt-4 text-sm font-semibold pb-2">
+                            Rp45.000
+                          </div>
+                        </figcaption>
+                      </blockquote>
+                    </figure>
+                  </div>
+                </a>
               </div>
               <div class="col-span-6 swiper-slide">
-                <div class="card h-300">
-                  <figure class="px-2">
-                    <div class="flex w-full items-center justify-center h-152">
-                      <img src="assets/images/image_2.png" alt="product_1" />
-                    </div>
-                    <blockquote class="pt-2">
-                      <figcaption class="font-normal">
-                        <div class="w-full figure-caption">
-                          <div class="caption">
-                            <div class="text-sm">
-                              Espresso Roast Blend Beans & Ground Coffee
+                <a href="#" onclick="addToCart();">
+                  <div class="card h-300">
+                    <figure class="px-2">
+                      <div class="flex w-full items-center justify-center h-152">
+                        <img src="assets/images/image_2.png" alt="product_1" />
+                      </div>
+                      <blockquote class="pt-2">
+                        <figcaption class="font-normal">
+                          <div class="w-full figure-caption">
+                            <div class="caption">
+                              <div class="text-sm">
+                                Espresso Roast Blend Beans & Ground Coffee
+                              </div>
+                              <div class="text-xs text-grey mb-1">
+                                12 oz Bag Ground
+                              </div>
                             </div>
-                            <div class="text-xs text-grey mb-1">
-                              12 oz Bag Ground
+                            <div
+                              class="flex bg-sticky w-2/3 justify-center items-center h-5 rounded-xl"
+                            >
+                              <span class="text-xs text-error">Stock habis</span>
                             </div>
                           </div>
-                          <div
-                            class="flex bg-sticky w-2/3 justify-center items-center h-5 rounded-xl"
-                          >
-                            <span class="text-xs text-error">Stock habis</span>
+                          <div class="price pt-4 text-sm font-semibold pb-2">
+                            Rp45.000
                           </div>
-                        </div>
-                        <div class="price pt-4 text-sm font-semibold pb-2">
-                          Rp. 45.000
-                        </div>
-                      </figcaption>
-                    </blockquote>
-                  </figure>
-                </div>
+                        </figcaption>
+                      </blockquote>
+                    </figure>
+                  </div>
+                </a>
               </div>
               <div class="col-span-6 swiper-slide">
-                <div class="card h-300">
-                  <figure class="px-2">
-                    <div class="flex w-full items-center justify-center h-152">
-                      <img src="assets/images/image_1.png" alt="product_1" />
-                    </div>
-                    <blockquote class="pt-2">
-                      <figcaption class="font-normal">
-                        <div class="w-full figure-caption">
-                          <div class="caption">
-                            <div class="text-sm">
-                              House Blend Light Roast Coffee
-                            </div>
-                            <div class="text-xs text-grey">
-                              12 oz Bag Ground
+                <a href="#" onclick="addToCart();">
+                  <div class="card h-300">
+                    <figure class="px-2">
+                      <div class="flex w-full items-center justify-center h-152">
+                        <img src="assets/images/image_1.png" alt="product_1" />
+                      </div>
+                      <blockquote class="pt-2">
+                        <figcaption class="font-normal">
+                          <div class="w-full figure-caption">
+                            <div class="caption">
+                              <div class="text-sm">
+                                House Blend Light Roast Coffee
+                              </div>
+                              <div class="text-xs text-grey">
+                                12 oz Bag Ground
+                              </div>
                             </div>
                           </div>
-                        </div>
-                        <div class="price pt-4 text-sm font-semibold pb-2">
-                          Rp. 45.000
-                        </div>
-                      </figcaption>
-                    </blockquote>
-                  </figure>
-                </div>
+                          <div class="price pt-4 text-sm font-semibold pb-2">
+                            Rp45.000
+                          </div>
+                        </figcaption>
+                      </blockquote>
+                    </figure>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
@@ -165,84 +184,90 @@
           <div class="swiper slider">
             <div class="grid grid-cols-12 gap-12 pt-3 swiper-wrapper">
               <div class="col-span-6 swiper-slide">
-                <div class="card h-300">
-                  <figure class="px-2">
-                    <div class="flex w-full items-center justify-center h-152">
-                      <img
-                        src="assets/images/powder.png"
-                        alt="product_1"
-                        class="justify-center items-center"
-                      />
-                    </div>
-                    <blockquote class="pt-2">
-                      <figcaption class="font-normal">
-                        <div class="figure-caption">
-                          <div class="caption">
-                            <div class="text-sm">
-                              Special Dutch Chocolate Powder
-                            </div>
-                            <div class="text-xs text-grey">
-                              12 oz Bag Ground
+                <a href="#" class="add-to-cart" onclick="addToCart();">
+                  <div class="card h-300">
+                    <figure class="px-2">
+                      <div class="flex w-full items-center justify-center h-152">
+                        <img
+                          src="assets/images/powder.png"
+                          alt="product_1"
+                          class="justify-center items-center"
+                        />
+                      </div>
+                      <blockquote class="pt-2">
+                        <figcaption class="font-normal">
+                          <div class="figure-caption">
+                            <div class="caption">
+                              <div class="text-sm">
+                                Special Dutch Chocolate Powder
+                              </div>
+                              <div class="text-xs text-grey">
+                                12 oz Bag Ground
+                              </div>
                             </div>
                           </div>
-                        </div>
-                        <div class="price text-sm font-semibold pb-2">
-                          Rp. 45.000
-                        </div>
-                      </figcaption>
-                    </blockquote>
-                  </figure>
-                </div>
+                          <div class="price text-sm font-semibold pb-2">
+                            Rp45.000
+                          </div>
+                        </figcaption>
+                      </blockquote>
+                    </figure>
+                  </div>
+                </a>
               </div>
               <div class="col-span-6 swiper-slide">
-                <div class="card h-300">
-                  <figure class="px-2">
-                    <div class="flex w-full items-center justify-center h-152">
-                      <img src="assets/images/powder.png" alt="product_1" />
-                    </div>
-                    <blockquote class="pt-2">
-                      <figcaption class="font-normal">
-                        <div class="figure-caption">
-                          <div class="caption">
-                            <div class="text-sm">Hazzelnut Powder</div>
-                            <div class="text-sm"></div>
-                            <div class="text-xs text-grey">
-                              12 oz Bag Ground
+                <a href="#" onclick="addToCart();">
+                  <div class="card h-300">
+                    <figure class="px-2">
+                      <div class="flex w-full items-center justify-center h-152">
+                        <img src="assets/images/powder.png" alt="product_1" />
+                      </div>
+                      <blockquote class="pt-2">
+                        <figcaption class="font-normal">
+                          <div class="figure-caption">
+                            <div class="caption">
+                              <div class="text-sm">Hazzelnut Powder</div>
+                              <div class="text-sm"></div>
+                              <div class="text-xs text-grey">
+                                12 oz Bag Ground
+                              </div>
                             </div>
                           </div>
-                        </div>
-                        <div class="price text-sm font-semibold pb-2">
-                          Rp. 45.000
-                        </div>
-                      </figcaption>
-                    </blockquote>
-                  </figure>
-                </div>
+                          <div class="price text-sm font-semibold pb-2">
+                            Rp45.000
+                          </div>
+                        </figcaption>
+                      </blockquote>
+                    </figure>
+                  </div>
+                </a>
               </div>
               <div class="col-span-6 swiper-slide">
-                <div class="card h-300">
-                  <figure class="px-2">
-                    <div class="flex w-full items-center justify-center h-152">
-                      <img src="assets/images/powder.png" alt="product_1" />
-                    </div>
-                    <blockquote class="pt-2">
-                      <figcaption class="font-normal">
-                        <div class="figure-caption">
-                          <div class="caption">
-                            <div class="text-sm">Hazzelnut Powder</div>
-                            <div class="text-sm"></div>
-                            <div class="text-xs text-grey">
-                              12 oz Bag Ground
+                <a href="#" onclick="addToCart();">
+                  <div class="card h-300">
+                    <figure class="px-2">
+                      <div class="flex w-full items-center justify-center h-152">
+                        <img src="assets/images/powder.png" alt="product_1" />
+                      </div>
+                      <blockquote class="pt-2">
+                        <figcaption class="font-normal">
+                          <div class="figure-caption">
+                            <div class="caption">
+                              <div class="text-sm">Hazzelnut Powder</div>
+                              <div class="text-sm"></div>
+                              <div class="text-xs text-grey">
+                                12 oz Bag Ground
+                              </div>
                             </div>
                           </div>
-                        </div>
-                        <div class="price text-sm font-semibold pb-2">
-                          Rp. 45.000
-                        </div>
-                      </figcaption>
-                    </blockquote>
-                  </figure>
-                </div>
+                          <div class="price text-sm font-semibold pb-2">
+                            Rp45.000
+                          </div>
+                        </figcaption>
+                      </blockquote>
+                    </figure>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
@@ -267,5 +292,27 @@
     </div>
     <script src="src/slider-lib.js"></script>
     <script src="src/slider.js"></script>
+    <script>
+      function hover(element) {
+      var element = document.getElementById('img-cart-1');
+      element.classList.add("hidden")
+      var element2 = document.getElementById('img-cart-2');
+      element2.classList.remove("hidden")
+    }
+
+    function unhover(element) {
+      var element = document.getElementById('img-cart-1');
+      element.classList.remove("hidden")
+      var element2 = document.getElementById('img-cart-2');
+      element2.classList.add("hidden")
+    }
+
+    function addToCart(element){
+      var element = document.getElementById('notification');
+      element.classList.remove("hidden");
+      var element2 = document.getElementById('alert');
+      element2.classList.remove("hidden");
+    }
+    </script>
   </body>
 </html>

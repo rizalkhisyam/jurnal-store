@@ -8,6 +8,8 @@
 
 body {
   font-family: eagleFont;
+  height: 100vh;
+  padding: 0;
 }
 
 .button-cart {
@@ -49,4 +51,58 @@ body {
   width: 375px;
   background-color: #f2f4f7;
   margin:0 auto;
+}
+
+.cart-item{
+  width: 48px;
+  height: 48px;
+  border: 0.52459px solid #D0D6DD;
+  box-shadow: 0px 5.2459px 7.86885px -1.57377px rgba(0, 0, 0, 0.1), 0px 2.09836px 3.14754px -1.04918px rgba(0, 0, 0, 0.05);
+}
+
+.arrow-back{
+  width: 48px;
+  height: 48px;
+  border: 0.52459px solid #D0D6DD;
+  box-shadow: 0px 5.2459px 7.86885px -1.57377px rgba(0, 0, 0, 0.1), 0px 2.09836px 3.14754px -1.04918px rgba(0, 0, 0, 0.05);
+}
+
+.home{
+  width: 48px;
+  height: 48px;
+  border: 0.52459px solid #D0D6DD;
+  box-shadow: 0px 5.2459px 7.86885px -1.57377px rgba(0, 0, 0, 0.1), 0px 2.09836px 3.14754px -1.04918px rgba(0, 0, 0, 0.05);
+}
+
+.button-quantity{
+  width: 20px;
+  height: 20px;
+}
+
+.notification-badge{
+  position: absolute;
+  border: solid 1px #F7601A;
+  color: #F7601A;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: white;
+  margin-top: -15px;
+}
+
+.alert-success{
+  position: absolute;
+  top: 0;
+  width: 136px;
+  height: 48px;
+  border: solid 1px #F7601A;
+  border-radius: 6px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
 }
